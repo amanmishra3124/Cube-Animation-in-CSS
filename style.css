@@ -1,0 +1,100 @@
+/*body
+{
+	background: cadetblue;
+}
+*/
+.wrapper
+{
+	width:200px;
+	height: 200px;
+	margin: 15% auto;
+}
+
+.box-area
+{
+	animation:animate 8s ease-in-out infinite;
+	transform-style: preserve-3d;
+	transform-origin: 100px 100px 0; 
+}
+
+.box-area div
+{
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	line-height: 200px;
+}
+.box-area .box1
+{
+	
+	background-color: green;
+
+	transform: translateZ(100px) ;
+}
+.box-area .box2
+{
+	
+	background-color: orange;
+
+	
+
+	transform: rotateY(90deg) translateZ(100px);
+}
+
+.box-area .box3
+{
+	
+	background-color: red;
+	
+	transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
+}
+.box-area .box4
+{
+	
+	background-color: grey;
+	
+	transform: rotateY(180deg) rotatez(90deg) translateZ(100px);
+}
+.box-area .box5
+{
+	
+	background-color: cyan;
+	
+	transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
+}
+.box-area .box6
+{
+	
+	background-color: blue;
+
+	
+	transform:rotateX(-90deg) translateZ(100px);
+}
+
+@keyframes animate
+{
+	from,to{
+		transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+
+	}
+	16%
+	{
+		transform: rotateY(-90deg);
+	}
+	32%
+	{
+		transform: rotateY(-90deg) rotateZ(90deg);
+	}*/
+	50%
+	{
+		transform: rotateY(-180deg) rotateZ(90deg);
+	}
+	66%
+	{
+		transform: rotateY(-280deg) rotateZ(90deg);
+	}
+	83%
+	{
+		transform: rotateX(90deg) ;
+	}
+}
